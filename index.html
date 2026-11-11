@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NEXORA — minimalistyczne akcesoria do nowoczesnego biurka i gaming setupu.">
+  <title>NEXORA — Twój setup. Twój styl.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">NEXORA / DETAL MA ZNACZENIE</div>
+  <header class="header">
+    <a class="brand" href="#"><span class="brand-mark">N</span>NEXORA</a>
+    <nav><a href="#produkty">Produkty</a><a href="#onas">O marce</a><a href="#kontakt">Kontakt</a></nav>
+    <button class="cart-button" id="openCart" aria-label="Otwórz koszyk">Koszyk <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">DESK SETUP / COLLECTION 01</p>
+        <h1>Twój setup.<br><em>Twój styl.</em></h1>
+        <p class="hero-text">Przemyślane dodatki, które porządkują przestrzeń i nadają jej charakter.</p>
+        <a class="primary-link" href="#produkty">ODKRYJ PRODUKTY <span>↘</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="art-glow"></div>
+        <div class="desk-scene">
+          <div class="monitor"><div class="monitor-screen"><span>N</span><small>FOCUS MODE</small></div><div class="monitor-neck"></div></div>
+          <div class="desk-top"></div>
+          <div class="desk-leg"></div>
+          <div class="plant"><i></i><i></i><i></i><b></b></div>
+          <div class="scene-label">LESS CLUTTER. MORE FOCUS.</div>
+        </div>
+      </div>
+      <div class="hero-index">01 — 04</div>
+    </section>
+
+    <section class="intro" id="onas">
+      <p class="eyebrow">POZNAJ NEXORA</p>
+      <p class="intro-line">Dobre stanowisko zaczyna się od <span>dobrych detali.</span></p>
+      <p class="intro-small">Minimalistyczny wygląd. Praktyczne rozwiązania. Przestrzeń, w której chce się działać.</p>
+    </section>
+
+    <section class="products-section" id="produkty">
+      <div class="section-heading"><div><p class="eyebrow">WYBIERZ SWÓJ ELEMENT</p><h2>Nasza kolekcja</h2></div><span class="muted">KOLEKCJA 01 / 2026</span></div>
+      <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <section class="banner">
+      <div><p class="eyebrow">PORZĄDEK, KTÓRY WIDAĆ</p><h2>Mniej chaosu.<br><em>Więcej przestrzeni.</em></h2></div>
+      <p>Stwórz miejsce dopasowane do siebie — do grania, nauki i codziennej pracy.</p>
+    </section>
+
+    <section class="contact" id="kontakt">
+      <div><p class="eyebrow">MASZ PYTANIE?</p><h2>Jesteśmy<br><em>do dyspozycji.</em></h2></div>
+      <div class="contact-note"><p>Wpisz tutaj swój prawdziwy adres e-mail przed publikacją.</p><a href="mailto:kontakt@twojadomena.pl">kontakt@twojadomena.pl ↗</a></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">N</span>NEXORA</a><span>© 2026 NEXORA. Wszystkie prawa zastrzeżone.</span><span>DESIGNED FOR YOUR SPACE.</span></footer>
+
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true">
+    <div class="cart-panel">
+      <div class="cart-head"><div><p class="eyebrow">TWOJE ZAMÓWIENIE</p><h2>Koszyk</h2></div><button id="closeCart" class="close-button" aria-label="Zamknij koszyk">×</button></div>
+      <div id="cartItems" class="cart-items"><p class="empty-cart">Twój koszyk jest pusty.</p></div>
+      <div class="cart-bottom"><div class="total-line"><span>Razem</span><strong id="cartTotal">0,00 zł</strong></div><button id="checkoutButton" class="checkout-button">Przejdź dalej</button><small>Wersja demonstracyjna — płatności nie są jeszcze aktywne.</small></div>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
